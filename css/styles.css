@@ -36,5 +36,28 @@ nav ul li a:hover {
 .slider {
     position: relative;
     height: 500px;
-    background: url('../img/bg.jpg') no-repeat center center cover;
+    background: url('../img/bg.jpg');
+}
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.slider-overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.slider-overlay p {
+    font-size: 24px;
 }
