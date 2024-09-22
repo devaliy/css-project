@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - My Website</title>
+    <link rel="stylesheet" href="feat.css">
+</head>
+<body>
+    <header>
+        <h1 class="slide-in">Welcome to Our features</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#features">Features</a>
+            </li>
+            <li>
+                <a href="#about">About us</a>
+            </li>
+            <li>
+                <a href="#services">Sercives</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="fade-in" id="fadeSection">
+        <h2 >Our Amazing Features </h2>
+
+            <ul >
+                <li> 1: User-Friendly Interface</li>
+                <li> 2: Fast Performance</li>
+                <li> 3: Responsive Design</li>
+                <li> 4: 24/7 Customer Support</li>
+                <li> 5: Regular Updates</li>
+            </ul>
+    </main>
+
+    <footer>
+        <p>&copy; web 2024</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const fadeSection = document.getElementById('fadeSection');
+            const sectionPosition = fadeSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if (sectionPosition < screenPosition) {
+                fadeSection.classList.add('fade-in-active');
+            }
+        });
+    </script>
+</body>
+</html>
